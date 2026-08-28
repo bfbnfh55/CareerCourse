@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerCourse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎓 CareerCourse</h1>
+        <p>ระบบแนะนำรายวิชาสำหรับอาชีพที่อยากเป็น</p>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- เลือกอาชีพ -->
+        <section id="career-selection">
+
+            <h2>🎯 คุณอยากประกอบอาชีพอะไร?</h2>
+
+            <p>
+                เลือกอาชีพที่คุณสนใจ
+                แล้วระบบจะแนะนำรายวิชาที่เหมาะสม
+            </p>
+
+            <form id="career-form">
+
+                <label for="career">
+                    อาชีพ:
+                </label>
+
+                <select id="career" name="career">
+
+                    <option value="">
+                        -- เลือกอาชีพ --
+                    </option>
+
+                    <option value="software-engineer">
+                        Software Engineer
+                    </option>
+
+                    <option value="data-scientist">
+                        Data Scientist
+                    </option>
+
+                    <option value="graphic-designer">
+                        Graphic Designer
+                    </option>
+
+                    <option value="digital-marketer">
+                        Digital Marketer
+                    </option>
+
+                </select>
+
+                <button type="button" onclick="recommendCourses()">
+                    🔍 แนะนำรายวิชา
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ข้อมูลอาชีพ -->
+        <section id="career-info">
+
+            <h2>💼 ข้อมูลอาชีพ</h2>
+
+            <div id="career-description">
+
+                <p>
+                    เลือกอาชีพด้านบน
+                    เพื่อดูข้อมูลและทักษะที่จำเป็น
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ทักษะที่ต้องการ -->
+        <section id="career-skills">
+
+            <h2>🛠 ทักษะที่จำเป็น</h2>
+
+            <div id="skill-list">
+
+                <p>
+                    ระบบจะแสดงทักษะที่จำเป็น
+                    หลังจากเลือกอาชีพ
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- รายวิชาที่แนะนำ -->
+        <section id="course-recommendations">
+
+            <h2>📚 รายวิชาที่แนะนำ</h2>
+
+            <p>
+                รายวิชาจะเรียงตามความเหมาะสม
+                กับอาชีพที่เลือก
+            </p>
+
+            <div id="course-list">
+
+                <!-- JavaScript จะแสดงรายวิชาตรงนี้ -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Learning Path -->
+        <section id="learning-path">
+
+            <h2>🗺️ Learning Path</h2>
+
+            <div id="path-list">
+
+                <p>
+                    เลือกอาชีพเพื่อสร้างเส้นทางการเรียน
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feedback -->
+        <section id="feedback">
+
+            <h2>💬 Feedback</h2>
+
+            <p>
+                ระบบช่วยให้คุณตัดสินใจเลือกวิชาได้ง่ายขึ้นหรือไม่?
+            </p>
+
+            <button type="button">
+                👍 ใช่
+            </button>
+
+            <button type="button">
+                👎 ยังไม่ช่วย
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            CareerCourse MVP Project
+        </p>
+
+        <p>
+            ระบบต้นแบบเพื่อช่วยวางแผนรายวิชาสำหรับอาชีพในอนาคต
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
