@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerCourse | Smart Career Planner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         BACKGROUND EFFECT
+    =========================================== -->
+
+    <div class="background">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid-bg"></div>
+    </div>
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+
+                <div>
+                    <div class="logo-title">CareerCourse</div>
+                    <div class="logo-subtitle">Smart Career Planner</div>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#career-selection">Career</a>
+                <a href="#career-skills">Skills</a>
+                <a href="#course-recommendations">Courses</a>
+                <a href="#learning-path">Learning Path</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <header class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                SMART CAREER RECOMMENDATION SYSTEM
+            </div>
+
+            <h1>
+                Discover Your
+                <span>Future Career</span>
+            </h1>
+
+            <p class="hero-description">
+                ระบบช่วยวางแผนการเรียนรู้
+                จาก <strong>อาชีพที่คุณสนใจ</strong>
+                สู่ <strong>ทักษะที่จำเป็น</strong>
+                และ <strong>รายวิชาที่ควรเรียน</strong>
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#career-selection" class="hero-button">
+                    🚀 เริ่มวางแผนอาชีพ
+                </a>
+
+                <a href="#course-recommendations" class="hero-button secondary">
+                    📚 ดูรายวิชา
+                </a>
+
+            </div>
+
+
+            <!-- HERO STATS -->
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>20+</strong>
+                    <span>Career Paths</span>
+                </div>
+
+                <div class="stat">
+                    <strong>30+</strong>
+                    <span>Courses</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Personalized</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <!-- ==========================================
+             CAREER SELECTION
+        =========================================== -->
+
+        <section id="career-selection" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon purple">
+                    🎯
+                </div>
+
+                <div>
+                    <span class="section-label">STEP 01</span>
+                    <h2>เลือกอาชีพที่คุณสนใจ</h2>
+                    <p>
+                        เลือกเส้นทางอาชีพที่คุณอยากไป
+                        แล้วให้ระบบวิเคราะห์ทักษะและรายวิชาที่เหมาะสม
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="career-form">
+
+                <label for="career">
+                    อาชีพที่สนใจ
+                </label>
+
+                <div class="select-wrapper">
+
+                    <select id="career" name="career">
+
+                        <option value="">
+                            -- เลือกอาชีพที่ต้องการ --
+                        </option>
+
+                        <option value="software-engineer">
+                            Software Engineer
+                        </option>
+
+                        <option value="web-developer">
+                            Web Developer
+                        </option>
+
+                        <option value="mobile-developer">
+                            Mobile Developer
+                        </option>
+
+                        <option value="game-developer">
+                            Game Developer
+                        </option>
+
+                        <option value="data-analyst">
+                            Data Analyst
+                        </option>
+
+                        <option value="data-scientist">
+                            Data Scientist
+                        </option>
+
+                        <option value="ai-engineer">
+                            AI Engineer
+                        </option>
+
+                        <option value="machine-learning-engineer">
+                            Machine Learning Engineer
+                        </option>
+
+                        <option value="database-administrator">
+                            Database Administrator
+                        </option>
+
+                        <option value="system-analyst">
+                            System Analyst
+                        </option>
+
+                        <option value="software-architect">
+                            Software Architect
+                        </option>
+
+                        <option value="network-engineer">
+                            Network Engineer
+                        </option>
+
+                        <option value="cybersecurity-analyst">
+                            Cybersecurity Analyst
+                        </option>
+
+                        <option value="cloud-engineer">
+                            Cloud Engineer
+                        </option>
+
+                        <option value="devops-engineer">
+                            DevOps Engineer
+                        </option>
+
+                        <option value="graphic-designer">
+                            Graphic Designer
+                        </option>
+
+                        <option value="ux-ui-designer">
+                            UX/UI Designer
+                        </option>
+
+                        <option value="digital-marketer">
+                            Digital Marketer
+                        </option>
+
+                        <option value="business-analyst">
+                            Business Analyst
+                        </option>
+
+                        <option value="it-project-manager">
+                            IT Project Manager
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    onclick="recommendCourses()"
+                >
+                    <span>🔍</span>
+                    วิเคราะห์และแนะนำ
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==========================================
+             CAREER INFO
+        =========================================== -->
+
+        <section id="career-info" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon blue">
+                    💼
+                </div>
+
+                <div>
+                    <span class="section-label">CAREER PROFILE</span>
+                    <h2>ข้อมูลอาชีพ</h2>
+                    <p>
+                        ทำความเข้าใจบทบาทและลักษณะของอาชีพที่เลือก
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="career-description" class="career-description">
+
+                <div class="empty-state">
+                    <div class="empty-icon">💡</div>
+
+                    <h3>เริ่มต้นค้นหาเส้นทางของคุณ</h3>
+
+                    <p>
+                        เลือกอาชีพด้านบน
+                        เพื่อดูข้อมูลและรายละเอียดของอาชีพ
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SKILLS
+        =========================================== -->
+
+        <section id="career-skills" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon green">
+                    🧠
+                </div>
+
+                <div>
+                    <span class="section-label">STEP 02</span>
+                    <h2>ทักษะที่จำเป็น</h2>
+                    <p>
+                        ทักษะสำคัญที่ควรมีสำหรับอาชีพที่คุณเลือก
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="skill-list" class="skill-list">
+
+                <div class="empty-state">
+                    <div class="empty-icon">🧩</div>
+
+                    <h3>ยังไม่ได้เลือกอาชีพ</h3>
+
+                    <p>
+                        เลือกอาชีพเพื่อดู Skill ที่จำเป็น
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SKILL MATCH
+        =========================================== -->
+
+        <section id="skill-match" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon orange">
+                    📊
+                </div>
+
+                <div>
+                    <span class="section-label">SKILL ANALYSIS</span>
+                    <h2>Skill Match</h2>
+                    <p>
+                        ระดับความสำคัญของแต่ละทักษะสำหรับอาชีพนี้
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="skill-match-list">
+
+                <div class="empty-state">
+                    <div class="empty-icon">📈</div>
+
+                    <h3>Skill Analysis</h3>
+
+                    <p>
+                        เลือกอาชีพเพื่อดูการวิเคราะห์ทักษะ
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             COURSES
+        =========================================== -->
+
+        <section id="course-recommendations" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon purple">
+                    📚
+                </div>
+
+                <div>
+                    <span class="section-label">STEP 03</span>
+                    <h2>รายวิชาที่แนะนำ</h2>
+                    <p>
+                        รายวิชาที่ช่วยพัฒนาทักษะให้ตรงกับอาชีพของคุณ
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="course-header">
+
+                <div>
+                    <span class="result-label">
+                        RECOMMENDED COURSES
+                    </span>
+                </div>
+
+                <div class="course-count">
+                    ✨ Personalized
+                </div>
+
+            </div>
+
+
+            <div id="course-list" class="course-list">
+
+                <div class="empty-state">
+                    <div class="empty-icon">📖</div>
+
+                    <h3>ยังไม่มีรายวิชาแนะนำ</h3>
+
+                    <p>
+                        เลือกอาชีพเพื่อรับคำแนะนำรายวิชา
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             LEARNING PATH
+        =========================================== -->
+
+        <section id="learning-path" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon cyan">
+                    🗺️
+                </div>
+
+                <div>
+                    <span class="section-label">STEP 04</span>
+                    <h2>Learning Path</h2>
+                    <p>
+                        เส้นทางการเรียนรู้จากพื้นฐานสู่การทำงานจริง
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="path-list">
+
+                <div class="empty-state">
+                    <div class="empty-icon">🚀</div>
+
+                    <h3>Your Learning Journey</h3>
+
+                    <p>
+                        เลือกอาชีพเพื่อสร้างเส้นทางการเรียนรู้
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             CAREER RECOMMENDATION
+        =========================================== -->
+
+        <section id="career-recommendation" class="glass-section">
+
+            <div class="section-heading">
+
+                <div class="section-icon pink">
+                    ✨
+                </div>
+
+                <div>
+                    <span class="section-label">SMART RECOMMENDATION</span>
+                    <h2>อาชีพที่ใกล้เคียง</h2>
+                    <p>
+                        อาชีพอื่นที่มีทักษะใกล้เคียงกับเส้นทางที่คุณเลือก
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="career-recommendation-list">
+
+                <div class="empty-state">
+                    <div class="empty-icon">🌟</div>
+
+                    <h3>Discover More</h3>
+
+                    <p>
+                        เลือกอาชีพเพื่อค้นหาอาชีพที่ใกล้เคียง
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             FEEDBACK
+        =========================================== -->
+
+        <section id="feedback" class="feedback-section">
+
+            <div class="feedback-content">
+
+                <div class="feedback-icon">
+                    💬
+                </div>
+
+                <div class="feedback-text">
+
+                    <span>YOUR FEEDBACK MATTERS</span>
+
+                    <h2>
+                        CareerCourse ช่วยคุณได้หรือไม่?
+                    </h2>
+
+                    <p>
+                        ความคิดเห็นของคุณจะช่วยให้เราพัฒนาระบบ
+                        ให้ดียิ่งขึ้น
+                    </p>
+
+                </div>
+
+
+                <div class="feedback-buttons">
+
+                    <button
+                        type="button"
+                        class="feedback-btn yes"
+                        onclick="sendFeedback('yes')"
+                    >
+                        👍 ช่วยได้
+                    </button>
+
+                    <button
+                        type="button"
+                        class="feedback-btn no"
+                        onclick="sendFeedback('no')"
+                    >
+                        👎 ยังไม่ช่วย
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="feedback-result"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🎓 CareerCourse
+        </div>
+
+        <p>
+            Smart Career Recommendation & Course Planning System
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            MVP2 Project • Designed for Career Planning
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
