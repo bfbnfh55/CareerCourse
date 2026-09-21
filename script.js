@@ -142,7 +142,7 @@ const careers = {
 
 
     "digital-marketer": {
-        name: "Digital Marketer",
+        name: "Digital Marketing",
         description: "ผู้วางแผนและดำเนินการตลาดผ่านช่องทางดิจิทัล",
 
         skills: [
